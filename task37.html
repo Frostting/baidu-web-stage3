@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="jquery-1.7.2.min.js"></script>
+<script src="task37.js"></script>
+<style>
+
+.pop-box{
+	display:none;
+	position:fixed;
+	z-index:999;
+	background:#fff;
+	}
+.pop-hd{
+	height:40px;
+	line-height:40px;
+	padding-left:15px;
+	font-size:18px;
+	color:#fff;
+	background:#1f9ebd;}
+.pop-cont{
+	padding:30px 15px;
+	min-height:300px;
+	min-width:700px;}
+.txt{
+	font-size:18px;
+	color:#555;
+	padding-bottom:100px;
+}
+.btn-line{
+	overflow:hidden;
+	padding-bottom:15px;}
+.btn{
+	float:right;
+	margin-right:20px;
+	min-width:150px;
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	background:#e27200;
+	text-align:center;
+	cursor:pointer;}
+.blk-bg{
+	position:fixed;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0.6);
+	z-index:99;}
+.move{
+	position:fixed;}
+.pop-cont p{
+	color:#0db4fa;
+	text-align:right;
+	padding:0 15px;
+	}
+</style>
+</head>
+
+<body>
+<p>这是一个测试</p>
+<div class="btn-line">
+	<div class="btn pop">pop</div>
+</div>
+
+
+<div class="pop-box">
+	<div class="pop-hd">Title-here:江左盟</div>
+    <div class="pop-cont">
+    	<div class="txt">test!<br>1.弹出框会根据具体大小来居中。<br />
+2.你可以点击drag-can按钮，之后可以拖动弹出框，但做的有点bug。望给出修改意见。<br />
+3.confirm和cancel按钮都会回到原页面<br /></div>
+		<p>————靖王最美小公举，心机boy梅长苏</p>
+        <div class="btn-line">
+            <div class="btn confirm">confirm</div>
+            <div class="btn cancel">cancel</div>
+            <div class=" btn drag">drag-can</div>
+        </div>
+    </div> 
+</div>
+</body>
+</html>
